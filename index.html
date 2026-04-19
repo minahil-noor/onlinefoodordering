@@ -9,8 +9,12 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#0f172a;color:#fff;}
-
+body{
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+    url('https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=1600') no-repeat center center fixed;
+    background-size: cover;
+    color:#fff;
+}
 /* NAVBAR */
 nav{
     position:sticky;top:0;
@@ -154,7 +158,7 @@ input,textarea{
 </div>
 
 <div class="card">
-<img src="https://s.lightorangebean.com/media/20240914160809/Spicy-Penne-Pasta_-done.png">
+<img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipes%2F2023-01-Caramelized-Tomato-Paste-Pasta%2F06-CARAMELIZED-TOMATO-PASTE-PASTA-039">
 <div class="card-content">
 <h3>Pasta</h3>
 <p>Rs 900</p>
@@ -195,17 +199,51 @@ input,textarea{
 <!-- ABOUT -->
 <section id="about">
 <h2>About Us</h2>
-<p style="text-align:center;max-width:600px;margin:auto;">
-We provide fast and fresh food delivery services across Pakistan. Our mission is to deliver quality meals with excellent service.
+
+<div style="max-width:900px;margin:auto;text-align:center;line-height:1.8;font-size:16px;color:#ddd;">
+
+<p>
+<strong style="color:#ff758c;">Foodies PK</strong> is a modern online food ordering platform built to deliver
+fresh, delicious, and hygienic meals directly to your doorstep anywhere in Pakistan.
 </p>
+
+<p>
+We are committed to providing a smooth and fast ordering experience with a wide variety of
+foods including burgers, pizzas, pasta, fries, sandwiches, and desserts — all prepared with
+high-quality ingredients and trusted restaurant partners.
+</p>
+
+<p>
+Our goal is to make food ordering <strong>simple, fast, and reliable</strong> while ensuring customer satisfaction
+through quick delivery and affordable pricing.
+</p>
+
+<br>
+
+<p style="color:#ff758c;font-weight:600;">
+?? Fresh Food • ? Fast Delivery • ?? Quality Guaranteed
+</p>
+
+<br>
+
+<p>
+?? Contact Email: 
+<a href="mailto:minahil27mano@gmail.com" style="color:#ff4b6e;text-decoration:none;font-weight:600;">
+minahil27mano@gmail.com
+</a>
+</p>
+
+</div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
 <h2>Contact Us</h2>
-<form onsubmit="sendMsg(event)">
+<form action="https://formsubmit.co/minahil27mano@gmail.com" method="POST">
 <input type="text" placeholder="Your Name" required>
 <input type="email" placeholder="Your Email" required>
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New Foodies PK Message">
 <textarea placeholder="Message" required></textarea>
 <button class="btn">Send</button>
 </form>
